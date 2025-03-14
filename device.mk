@@ -323,6 +323,7 @@ $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-evolution \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -502,6 +503,12 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+# OPlusExtras
+PRODUCT_PACKAGES += \
+    OPlusExtrasResCommon \
+    OPlusExtras \
+    tri-state-key-calibrate
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/avicii/avicii-vendor.mk)
