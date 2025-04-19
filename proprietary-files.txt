@@ -67,8 +67,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 # Audio
 odm/lib/libaudioEngineerTest.so
 vendor/lib/hw/audio.primary.lito.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libssrec.so
 vendor/lib/vendor.oplus.hardware.performance@1.0.so
 
 # Audio firmware
